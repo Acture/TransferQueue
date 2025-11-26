@@ -14,6 +14,12 @@
 </div>
 <br/>
 
+## Note
+This is a fork repo of the official repo of [TransferQueue](https://github.com/TransferQueue/TransferQueue). The official repo (with recent new features) are temporarily invisible starting from 2025-11-11, as we’re going through some company checks. 
+
+No need to worry—we will be back!
+
+If you wish to use TransferQueue in the meantime, feel free to visit the [PyPI page](https://pypi.org/project/TransferQueue/). The newest version can be found there.
 
 
 <h2 id="overview">🎉 Overview</h2>
