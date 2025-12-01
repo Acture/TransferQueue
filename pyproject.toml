@@ -14,7 +14,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "TransferQueue"
 
-dynamic = ["version", "dependencies"]
+dynamic = ["version"]
 authors = [
   {name = "TransferQueue Team", email = "hanzy19@tsinghua.org.cn"},
 ]
@@ -23,6 +23,15 @@ description = "TransferQueue: An Asynchronous Streaming Data Management Module"
 license = {text = "Apache-2.0"}
 #readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.10"
+
+dependencies = [
+    "hydra-core>=1.3.2",
+    "msgspec>=0.20.0",
+    "numpy>=2.0.0",
+    "pyzmq>=27.1.0",
+    "ray[default]>=2.52.1",
+    "tensordict>=0.10.0",
+]
 
 # -------------------------------
 # tool.ruff - Linting configuration
@@ -108,4 +117,9 @@ dependencies = {file = "requirements.txt"}
 [tool.setuptools.package-data]
 transfer_queue = [
   "version/*",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
 ]
